@@ -11,6 +11,8 @@ The ETL not only gets the data securely from jBASE to SQL Server but it's also f
 
 ![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/architecture-0.png)
 
+##Threadpool
+
 All ETL processes are multi-threaded. A typical routine is as follows:
 
 - The main thread parses the 'jobs' XML file for information such as work path and file names.  

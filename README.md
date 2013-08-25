@@ -26,6 +26,13 @@ All ETL processes are multi-threaded. A typical routine is as follows:
 
 ![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/threadpool-0.png)
 
+####What's the deal with the "++" naming convention?
+- Libraries and executables compiled as C/C++ are named with "++" at the end.  Else, they are .NET.
+
+####Why are you putting this in GitHub?
+- The suite of tools were compiled with Visual Studio 2008 and works in 64-bit Windows OS.  
+  I am hoping to migrate everything to work in Linux.  Contributors welcome!
+
 ##Installation  
 
 The following utilities and configuration files will be created once the installation has completed:

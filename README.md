@@ -39,3 +39,89 @@ All ETL executables generate logs during processing for each session in the work
 All executables that invoke ETL processes generate logs in the "#log" folder under the "[installation directory]\bin" folder (for more details, click on the "Logging" tab):
 
 ![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/logging-summary-1.png)
+
+##Utilities
+
+Brief Descriptions of Installed Components:
+
+
+####etlcommon.dll 
+
+- Library containing reusable objects shared by managed executables.
+  
+####etlctrl.exe 
+
+- Creates dynamic jQL based on user-defined configuration files.•Exports job files for all processes based on user-defined configuration files.•Creates the key file for encryption and decryption used by all processes.
+  
+####etlexec++.exe 
+
+- Starts processes sequentially based on user-defined configuration file.
+  
+####etlmodel.exe 
+
+- Extracts schemas for all tables defined in FileDefineExplode.xml from ODSDB.•Exports the above as FileDefineExplodeModel.xml.•The exported file is used by tinyupload2.exe.
+  
+####etllog.exe 
+
+- Constructs flat file and SQL reports from logs created by ETL processes.
+  
+####etlsecure.exe 
+
+- User application to encrypt SSH2 credentials.
+  
+####filesystem++.dll 
+
+- Library used for file searching shared by unmanaged executables.
+  
+####libssh2.dll 
+
+- Open source client-side unmanaged library implementing SSH2 protocol.
+  
+####libeay32.dll 
+
+- Open source unmanaged library containing encryption functions.
+  
+####threadpool++.dll 
+
+- Library for threadpool creation shared by unmanaged executables.
+  
+####tinybuild2++.exe 
+
+- Imports job file created by etlctrl.exe and creates a task queue from it.•Manages the build process in a threadpool.•Only process where threadpool threads are both semaphores and workers.
+  
+####tinydecrypt++.exe 
+
+- User application to decrypt selected encrypted files.
+  
+####tinydownload2.exe 
+
+- SSH2 client that downloads data from jBASE.•Encrypts the data and exports them to disk.
+  
+####tinydownload++.exe 
+
+- Imports job file created by etlctrl.exe and creates a task queue from it.•Manages the download process in a threadpool.•The threadpool initiates multiple tinydownload2.exe instances.
+  
+####tinyencrypt++.dll 
+
+- Library used for file encryption and decyption shared by all processes.•Used by etlctrl.exe for generating the session key.
+  
+####tinyexplode2.exe 
+
+- Explodes jBASE multi/sub values.•Explode definitions is read from FileDefineExplode.xml.•The data source are raw jBASE data that has been built and uploaded to SQL.•Encrypts the exploded data and exports them to disk.
+  
+####tinyexplode.exe 
+
+- Imports job file created by etlctrl.exe and creates a task queue from it.•Manages the explode process in a threadpool.•The threadpool initiates multiple tinyexplode2.exe instances.
+  
+####tinyupload2.exe 
+
+- Uploads raw jBASE and exploded data to SQL.•Converts data to SQL type if table schema is defined in FileDefineExplodeModel.xml.
+  
+####tinyupload.exe 
+
+- Imports job file created by etlctrl.exe and creates a task queue from it.•Manages the upload process in a threadpool.•The threadpool initiates multiple tinyupload2.exe instances.•Creates the SQL tables for raw jBASE data exploded data.
+  
+####xmlread++.dll
+
+- Library used for reading XML files shared by unmanaged executables.
+

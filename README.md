@@ -21,3 +21,9 @@ All ETL processes are multi-threaded. A typical routine is as follows:
 - When the semaphore-invoked process completes, the semaphore will look for another job  
 
 ![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/threadpool-0.png)
+
+##Installation  
+
+The following utilities and configuration files will be created once the installation has completed:
+
+![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/installed-utilities.png)

@@ -29,3 +29,13 @@ All ETL processes are multi-threaded. A typical routine is as follows:
 The following utilities and configuration files will be created once the installation has completed:
 
 ![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/installed-utilities.png)
+
+##Logging
+
+All ETL executables generate logs during processing for each session in the work folder (for more details, click on the "Logging" tab):
+
+![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/logging-summary-0.png)
+
+All executables that invoke ETL processes generate logs in the "#log" folder under the "[installation directory]\bin" folder (for more details, click on the "Logging" tab):
+
+![Image Alt](http://eztier.com/documentation/t24/jbase-sql-etl/images/ownerobjects/logging-summary-1.png)

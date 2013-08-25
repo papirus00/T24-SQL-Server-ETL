@@ -1,9 +1,11 @@
-jBASE-SQL-Server-ETL
+T24-SQL-Server-ETL
 ====================
 
-Blazing Fast Data Extraction from jBASE to SQL Server
+Blazing Fast Data Extraction from T24 to SQL Server
 
-The jBASE-SQL Server ETL is a suite of utilities that work together to extract and load data from jBASE to SQL Server securely. 
+The T24-SQL Server ETL is a suite of utilities that work together to extract and load data from jBASE to SQL Server securely. 
+
+It operates with as little abstraction as possible. No jBASIC, no Java, just raw unadulterated speed.
 
 Network communications are done through secured channels such as SSH2 and SSPI. File encryption and decryption are done in the application runtime and data is never written to disk in plain text. 
 

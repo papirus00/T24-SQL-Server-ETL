@@ -30,7 +30,7 @@ All ETL processes are multi-threaded. A typical routine is as follows:
 - Libraries and executables compiled as C/C++ are named with "++" at the end.  Else, they are .NET.
 
 ####Why are you putting this in GitHub?
-- The suite of tools were compiled with Visual Studio 2008 and works in 64-bit Windows OS.  
+- When I authored this, the suite of tools were compiled with Visual Studio 2008 and works in 64-bit Windows OS.  
   I am hoping to migrate everything to work in Linux.  Contributors welcome!
 
 ##Installation  
